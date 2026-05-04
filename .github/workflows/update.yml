@@ -1,0 +1,85 @@
+# ================================================================
+#  cvedcVPN — автообновление конфигов
+#
+#  Триггеры:
+#    • По расписанию — каждый час
+#    • Вручную      — через вкладку Actions → Run workflow
+#    • При пуше     — только если изменился parser.js
+#
+#  Переменные окружения (Settings → Secrets and variables → Actions):
+#    MAX_LIMIT   — максимальное число конфигов (необязательно, default: 500)
+# ================================================================
+
+name: Update VPN Configs
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # каждый час в 00 минут
+
+  workflow_dispatch:        # запуск вручную из вкладки Actions
+    inputs:
+      max_limit:
+        description: 'Максимальное число конфигов (пусто = значение по умолчанию)'
+        required: false
+        default: ''
+
+  push:
+    paths:
+      - 'parser.js'         # пересобрать при изменении парсера
+
+permissions:
+  contents: write           # нужно для git push
+
+jobs:
+  parse:
+    name: Parse & Commit
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # ── 1. Получить код репозитория ──────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0    # полная история нужна для корректного git log
+
+      # ── 2. Установить Node.js ────────────────────────────────────
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'   # fetch встроен начиная с Node 18
+
+      # ── 3. Запустить парсер ──────────────────────────────────────
+      - name: Run parser
+        env:
+          # Приоритет: ручной ввод → секрет → дефолт 500
+          MAX_LIMIT: ${{ github.event.inputs.max_limit || vars.MAX_LIMIT || '500' }}
+        run: node parser.js
+
+      # ── 4. Проверить наличие изменений ───────────────────────────
+      - name: Check for changes
+        id: diff
+        run: |
+          git diff --quiet configs/configs.txt \
+            && echo "changed=false" >> "$GITHUB_OUTPUT" \
+            || echo "changed=true"  >> "$GITHUB_OUTPUT"
+
+      # ── 5. Закоммитить и запушить (только если файл изменился) ───
+      - name: Commit & push configs
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add configs/configs.txt configs/version.txt configs/log.csv
+
+          TOTAL=$(grep -c '^vless://\|^vmess://\|^trojan://\|^ss://' configs/configs.txt || true)
+          VERSION=$(cat configs/version.txt)
+          git commit -m "🔄 update configs — v${VERSION} (${TOTAL} configs) [skip ci]"
+
+          git push
+
+      # ── 6. Сообщить, если изменений не было ─────────────────────
+      - name: No changes detected
+        if: steps.diff.outputs.changed == 'false'
+        run: echo "ℹ️ Конфиги не изменились, коммит пропущен."
