@@ -31,8 +31,15 @@ function extractSNI(urlPart, comment) {
   const full = urlPart + '#' + comment;
   let sni = '';
   const sniMatch = full.match(/[?&]sni=([^&]+)/);
-  if (sniMatch) sni = decodeURIComponent(sniMatch[1]);
 
+  if (sniMatch) {
+  try {
+    sni = decodeURIComponent(sniMatch[1]);
+  } catch {
+    sni = sniMatch[1]; // если кривой — берём как есть
+  }
+  }
+  
   if (!sni && comment) {
     const hostMatch = comment.match(/host[=:]\s*([^\s,]+)/i);
     if (hostMatch) sni = hostMatch[1];
