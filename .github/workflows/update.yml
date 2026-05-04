@@ -79,7 +79,3 @@ jobs:
 
           git push
 
-      # ── 6. Сообщить, если изменений не было ─────────────────────
-      - name: No changes detected
-        if: steps.diff.outputs.changed == 'false'
-        run: echo "ℹ️ Конфиги не изменились, коммит пропущен."
