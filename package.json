@@ -1,3 +1,14 @@
 {
-  "type": "module"
+  "name": "cvedcvpn-parser",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "parse": "node parser.js",
+    "check": "node checker.js",
+    "start": "node parser.js && node checker.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
 }
+
