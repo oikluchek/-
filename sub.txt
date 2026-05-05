@@ -1,2 +1,2 @@
 #profile-title: 🔥 cvedc sub 🔥
-#announce: подключение парсера
+#announce: подписка переехала https://cvedcsub.vercel.app/configs/configs.txt
