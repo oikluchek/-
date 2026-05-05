@@ -1,0 +1,4 @@
+#profile-title: 🔥 cvedcVPN selected 🔥
+#profile-update-interval: 5
+#announce: проверено DNS+WS ⚡ живых: 0
+
