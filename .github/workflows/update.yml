@@ -1,13 +1,15 @@
 # ================================================================
-#  cvedcVPN — автообновление конфигов
+#  cvedcVPN — парсинг + DNS/WS-проверка конфигов
 #
 #  Триггеры:
 #    • По расписанию — каждый час
 #    • Вручную      — через вкладку Actions → Run workflow
-#    • При пуше     — только если изменился parser.js
+#    • При пуше     — только если изменился parser.js или checker.js
 #
-#  Переменные окружения (Settings → Secrets and variables → Actions):
-#    MAX_LIMIT   — максимальное число конфигов (необязательно, default: 500)
+#  Переменные репозитория (Settings → Variables → Actions):
+#    MAX_LIMIT      — макс. число конфигов для парсера  (default: 500)
+#    CONCURRENCY    — параллельных TCP-проверок          (default: 20)
+#    TCP_TIMEOUT_MS — таймаут TCP в мс                  (default: 4000)
 # ================================================================
 
 name: Update VPN Configs
@@ -25,46 +27,51 @@ on:
 
   push:
     paths:
-      - 'parser.js'         # пересобрать при изменении парсера
+      - 'parser.js'
+      - 'checker.js'
 
 permissions:
-  contents: write           # нужно для git push
+  contents: write
 
 jobs:
-  parse:
-    name: Parse & Commit
+  parse-and-check:
+    name: Parse → Check → Commit
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30    # checker может идти дольше парсера
 
     steps:
       # ── 1. Получить код репозитория ──────────────────────────────
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0    # полная история нужна для корректного git log
 
       # ── 2. Установить Node.js ────────────────────────────────────
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'   # fetch встроен начиная с Node 18
+          node-version: '20'
 
       # ── 3. Создать папку configs (если ещё нет в репо) ──────────
       - name: Ensure configs directory exists
         run: mkdir -p configs
 
-      # ── 4. Запустить парсер ──────────────────────────────────────
+      # ── 4. Запустить парсер → configs/configs.txt ────────────────
       - name: Run parser
         env:
-          # Приоритет: ручной ввод → переменная репо → дефолт 500
           MAX_LIMIT: ${{ github.event.inputs.max_limit || vars.MAX_LIMIT || '500' }}
           OUTPUT_DIR: ./configs
         run: node parser.js
 
-      # ── 5. Проверить наличие изменений ───────────────────────────
-      #  git diff видит только уже отслеживаемые файлы.
-      #  Решение: сначала git add, потом git diff --cached.
-      #  Это корректно работает и для новых (untracked) файлов.
+      # ── 5. Запустить чекер → configs/selected.txt ────────────────
+      #  DNS-резолвинг + TCP-доступность для WS-конфигов
+      - name: Run checker (DNS + WS)
+        env:
+          OUTPUT_DIR:      ./configs
+          CONCURRENCY:     ${{ vars.CONCURRENCY    || '20'   }}
+          TCP_TIMEOUT_MS:  ${{ vars.TCP_TIMEOUT_MS || '4000' }}
+          DNS_TIMEOUT_MS:  '5000'
+        run: node checker.js
+
+      # ── 6. Проверить наличие изменений ───────────────────────────
       - name: Check for changes
         id: diff
         run: |
@@ -75,19 +82,21 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      # ── 6. Закоммитить и запушить (только если файл изменился) ───
-      - name: Commit & push configs
+      # ── 7. Закоммитить и запушить ────────────────────────────────
+      - name: Commit & push
         if: steps.diff.outputs.changed == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          TOTAL=$(grep -cE '^(vless|vmess|trojan|ss)://' configs/configs.txt || echo 0)
+          TOTAL=$(grep -cE '^(vless|vmess|trojan|ss)://' configs/configs.txt    || echo 0)
+          ALIVE=$(grep -cE '^(vless|vmess|trojan|ss)://' configs/selected.txt   || echo 0)
           VERSION=$(cat configs/version.txt 2>/dev/null || echo 1)
-          git commit -m "🔄 update configs — v${VERSION} (${TOTAL} configs) [skip ci]"
+
+          git commit -m "🔄 v${VERSION} | all: ${TOTAL} | ✅ ws-alive: ${ALIVE} [skip ci]"
           git push
 
-      # ── 7. Сообщить, если изменений не было ─────────────────────
+      # ── 8. Нет изменений ─────────────────────────────────────────
       - name: No changes detected
         if: steps.diff.outputs.changed == 'false'
         run: echo "ℹ️ Конфиги не изменились, коммит пропущен."
