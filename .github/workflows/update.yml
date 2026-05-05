@@ -49,33 +49,45 @@ jobs:
         with:
           node-version: '20'   # fetch встроен начиная с Node 18
 
-      # ── 3. Запустить парсер ──────────────────────────────────────
+      # ── 3. Создать папку configs (если ещё нет в репо) ──────────
+      - name: Ensure configs directory exists
+        run: mkdir -p configs
+
+      # ── 4. Запустить парсер ──────────────────────────────────────
       - name: Run parser
         env:
-          # Приоритет: ручной ввод → секрет → дефолт 500
+          # Приоритет: ручной ввод → переменная репо → дефолт 500
           MAX_LIMIT: ${{ github.event.inputs.max_limit || vars.MAX_LIMIT || '500' }}
+          OUTPUT_DIR: ./configs
         run: node parser.js
 
-      # ── 4. Проверить наличие изменений ───────────────────────────
+      # ── 5. Проверить наличие изменений ───────────────────────────
+      #  git diff видит только уже отслеживаемые файлы.
+      #  Решение: сначала git add, потом git diff --cached.
+      #  Это корректно работает и для новых (untracked) файлов.
       - name: Check for changes
         id: diff
         run: |
-          git diff --quiet configs/configs.txt \
-            && echo "changed=false" >> "$GITHUB_OUTPUT" \
-            || echo "changed=true"  >> "$GITHUB_OUTPUT"
+          git add configs/
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
-      # ── 5. Закоммитить и запушить (только если файл изменился) ───
+      # ── 6. Закоммитить и запушить (только если файл изменился) ───
       - name: Commit & push configs
         if: steps.diff.outputs.changed == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add configs/configs.txt configs/version.txt configs/log.csv
-
-          TOTAL=$(grep -c '^vless://\|^vmess://\|^trojan://\|^ss://' configs/configs.txt || true)
-          VERSION=$(cat configs/version.txt)
+          TOTAL=$(grep -cE '^(vless|vmess|trojan|ss)://' configs/configs.txt || echo 0)
+          VERSION=$(cat configs/version.txt 2>/dev/null || echo 1)
           git commit -m "🔄 update configs — v${VERSION} (${TOTAL} configs) [skip ci]"
-
           git push
 
+      # ── 7. Сообщить, если изменений не было ─────────────────────
+      - name: No changes detected
+        if: steps.diff.outputs.changed == 'false'
+        run: echo "ℹ️ Конфиги не изменились, коммит пропущен."
