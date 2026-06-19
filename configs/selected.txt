@@ -1,4 +1,4 @@
 #profile-title: 🔥 cvedcVPN selected 🔥
 #profile-update-interval: 5
-#announce: проверено DNS+WS ⚡ живых: 0
-
+#announce: проверено DNS+WS ⚡ живых: 1
+vless://ca428a2e-7f82-4030-851b-cab731a5645a@l12.l-itx.info:2053?allowinsecure=0&encryption=none&fp=firefox&host=itx-server.digital&path=%2Fws&security=tls&sni=eh.vk.com&type=ws&allowInsecure=1&insecure=1#🇷🇺 Россия | SNI eh.vk.com | 🔥 cvedcVPN sub
