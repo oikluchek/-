@@ -1,6 +1,7 @@
 #profile-title: 🔥 cvedcVPN sub 🔥
 #profile-update-interval: 5
 #announce: парсер работает ⚡
+vless://ddc10946-d4f9-4cb9-9493-b439705ce2ad@nl2.nvrsk-not-news.ru:41698?type=tcp&security=reality&encryption=none&fp=firefox&pbk=CGy3XQXti0IWqe5GK93fH5kolq7zafDhFZvkedRFKR8&sid=455b&sni=www.vk.com&spx=%2FbakV6xaC0P3teoL#🇳🇱 Нидерланды | SNI www.vk.com | 🔥 cvedcVPN sub
 vless://4c0e1fb5-08a6-4809-8723-9721f1b1990b@nl.prx1.raketa-balance.com:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=rutube.ru&fp=qq&security=reality&pbk=JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY&sid=6c6082a2223c1d03#🇩🇪 Германия | SNI rutube.ru | 🔥 cvedcVPN sub
 vless://31fb98b7-e7a1-4b56-8c6a-3f060f06393c@freetg.strettenvpn.com:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28&sid=8248954896&sni=eh.vk.com&spx=/o7Aaf6fjwgbitolAe#🇩🇪 Германия | SNI eh.vk.com | 🔥 cvedcVPN sub
 vless://7cf3e42a-a7bc-4b98-94e2-dba7dee77ec8@demw.verymad.net:27439?type=tcp&security=reality&encryption=none&fp=firefox&pbk=Re0aWbYgk775QZ2eiIzh9fwPANq8HfLlrp9vbTC8vXQ&sid=3a1e&sni=www.vk.com&spx=%2FT3RNbsyxNh3cJPB#🇩🇪 Германия | SNI www.vk.com | 🔥 cvedcVPN sub
