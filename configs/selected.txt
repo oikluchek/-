@@ -1,4 +1,4 @@
 #profile-title: 🔥 cvedcVPN selected 🔥
 #profile-update-interval: 5
-#announce: проверено DNS+WS ⚡ живых: 0
-
+#announce: проверено DNS+WS ⚡ живых: 1
+vless://d4aad26f-70b6-4411-8517-17f7b4281886@tn.tmn141246.ru:2200?type=ws&security=none&fp=firefox&sni=rzd.ru&path=/v1#🇩🇪 Германия | SNI rzd.ru | 🔥 cvedcVPN sub
