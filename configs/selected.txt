@@ -2,5 +2,5 @@
 #profile-update-interval: 5
 #announce: проверено DNS+WS ⚡ живых: 3
 vless://d4aad26f-70b6-4411-8517-17f7b4281886@tn.tmn141246.ru:2200?&sni=rzd.ru&type=ws&headerType=none&host=tn.tmn141246.ru&path=%2Fv1#🇩🇪 Германия | SNI rzd.ru | 🔥 cvedcVPN sub
-vless://155e8dd4-a559-407a-9ea8-13a5e829f066@tn.tmn141246.ru:4100?encryption=none&security=none&sni=live.ok.ru&type=ws&path=%2Fv1#🇷🇺 Россия | SNI live.ok.ru | 🔥 cvedcVPN sub
-vless://d4aad26f-70b6-4411-8517-17f7b4281886@tn.tmn141246.ru:2200?encryption=none&security=none&sni=rzd.ru&type=ws&path=%2Fv1#🇷🇺 Россия | SNI rzd.ru | 🔥 cvedcVPN sub
+vless://155e8dd4-a559-407a-9ea8-13a5e829f066@tn.tmn141246.ru:4100?encryption=none&security=none&sni=live.ok.ru&type=ws&path=%2Fv1#🇫🇷 Франция | SNI live.ok.ru | 🔥 cvedcVPN sub
+vless://d4aad26f-70b6-4411-8517-17f7b4281886@tn.tmn141246.ru:2200?encryption=none&security=none&sni=rzd.ru&type=ws&path=%2Fv1#🇫🇷 Франция | SNI rzd.ru | 🔥 cvedcVPN sub
