@@ -1,4 +1,5 @@
 #profile-title: 🔥 cvedcVPN selected 🔥
 #profile-update-interval: 5
-#announce: проверено DNS+WS ⚡ живых: 1
+#announce: проверено DNS+WS ⚡ живых: 2
 vless://11f3e7b1-5507-46da-a268-1f70a543e40a@run5.wba-pn.ru:8443?fp=firefox&security=tls&sni=vk.com&type=ws&allowInsecure=1&insecure=1#🇷🇺 Россия | SNI vk.com | 🔥 cvedcVPN sub
+vless://9ffaf9f7-a2ad-47ef-9256-f607b3b3c6cc@wsnl24.wba-pn.ru:8443?type=ws&security=tls&sni=vk.com&fp=chrome#🇳🇱 Нидерланды | SNI vk.com | 🔥 cvedcVPN sub
