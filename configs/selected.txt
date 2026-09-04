@@ -1,4 +1,4 @@
 #profile-title: 🔥 cvedcVPN selected 🔥
 #profile-update-interval: 5
-#announce: проверено DNS+WS ⚡ живых: 0
-
+#announce: проверено DNS+WS ⚡ живых: 1
+vless://9a47a8ff-8cdd-4a35-b765-fbad6d40e0a0@bz9.wba-pn.ru:2053?type=ws&security=tls&sni=speedtest.tinkoff.ru&fp=chrome#🇷🇺 Россия | SNI speedtest.tinkoff.ru | 🔥 cvedcVPN sub
