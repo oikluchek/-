@@ -1,4 +1,5 @@
 #profile-title: 🔥 cvedcVPN selected 🔥
 #profile-update-interval: 5
-#announce: проверено DNS+WS ⚡ живых: 1
+#announce: проверено DNS+WS ⚡ живых: 2
 vless://f7c74a35-1da0-5097-9fa7-a20735610ac1@flax-spinel23895.my-vm.work:8088?host=queuev4.vk.com&path=%2Fapi&security=none&sni=queuev4.vk.com&type=ws#🇮🇳 Индия | SNI queuev4.vk.com | 🔥 cvedcVPN sub
+vless://f7c74a35-1da0-5097-9fa7-a20735610ac1@atomic-prase23893.my-vm.work:8088?security=none&type=ws&path=%2Fapi&host=queuev4.vk.com&packetEncoding=xudp&sni=queuev4.vk.com&encryption=none#🇱🇻 Латвия | SNI queuev4.vk.com | 🔥 cvedcVPN sub
