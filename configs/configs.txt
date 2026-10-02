@@ -1,4 +1,4 @@
 #profile-title: 🔥 cvedcVPN sub 🔥
 #profile-update-interval: 5
 #announce: парсер работает ⚡
-vless://1c332eae-7e02-4acd-996d-4eb3e652401c@prep.wwwinternetvideo.click:443?security=reality&type=tcp&sni=yandex.ru&fp=firefox&flow=xtls-rprx-vision&sid=bbe46bd8f6b96839&pbk=uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM#🇸🇬 Сингапур | SNI yandex.ru | 🔥 cvedcVPN sub
+vless://1c332eae-7e02-4acd-996d-4eb3e652401c@prep.wwwinternetvideo.click:443?security=reality&type=tcp&packetEncoding=xudp&sni=yandex.ru&fp=firefox&flow=xtls-rprx-vision&sid=bbe46bd8f6b96839&pbk=uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM#🇸🇬 Сингапур | SNI yandex.ru | 🔥 cvedcVPN sub
