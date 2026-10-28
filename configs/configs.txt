@@ -1,6 +1,6 @@
 #profile-title: 🔥 cvedcVPN sub 🔥
 #profile-update-interval: 5
 #announce: парсер работает ⚡
-vless://e436321f-24a9-4c38-b935-7d7dee0c3f68@ss.ll0ll.vip:2096?mode=gun&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&security=reality&serviceName=vless-grpc-reality&sni=id.vk.com&type=grpc&fp=chrome#🇩🇪 Германия | SNI id.vk.com | 🔥 cvedcVPN sub
-vless://408c51e8-9246-483d-ba73-34ab4e202eb9@hahahaarmenia.redemshenvpn.site:24694?encryption=none&type=tcp&flow=xtls-rprx-vision&security=reality&pbk=kaPztgo_2b2CKxytGWXzn6EauyNKr6Ho8xerGpSS-SQ&sni=metrika.yandex.ru&fp=firefox&sid=58301280#🇩🇪 Германия | SNI metrika.yandex.ru | 🔥 cvedcVPN sub
-vless://4ad3dbf5-2005-4d96-b56c-a0ca9905cab6@hahahaarmenia.redemshenvpn.site:24694/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=metrika.yandex.ru&fp=firefox&security=reality&pbk=kaPztgo_2b2CKxytGWXzn6EauyNKr6Ho8xerGpSS-SQ&sid=58301280#🇩🇪 Германия | SNI metrika.yandex.ru | 🔥 cvedcVPN sub
+vless://3acb3c2b-680c-40a5-ac19-9eef6b061efa@gonci.zaebalsanoproxyklinus.lol:20285?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=metrika.yandex.ru&pbk=snNVYSFAGMHIRMnzBZoFFTcu6KowqSFLSyRgmI9NSRU&sid=5308d9ab&fp=firefox#🇺🇸 США | SNI metrika.yandex.ru | 🔥 cvedcVPN sub
+vless://3acb3c2b-680c-40a5-ac19-9eef6b061efa@gonci.zaebalsanoproxyklinus.lol:20285?encryption=none&flow=xtls-rprx-vision&security=reality&sni=metrika.yandex.ru&fp=chrome&pbk=snNVYSFAGMHIRMnzBZoFFTcu6KowqSFLSyRgmI9NSRU&sid=5308d9ab&type=tcp&headerType=none#🇮🇹 Италия | SNI metrika.yandex.ru | 🔥 cvedcVPN sub
+vless://d4001352-dc64-48b8-b786-5860b284ad3d@de.poncheki.xyz:2083?encryption=none&type=grpc&serviceName=tjwvrf1q9d0n&mode=gun&security=reality&sni=vk.com&fp=firefox&pbk=NWNI1krUm5rhcIRnP3KVvatf9hNKu_H-93bPUdw4cxw&sid=0ad9fd399087e404#🇸🇦 Anycast | SNI vk.com | 🔥 cvedcVPN sub
