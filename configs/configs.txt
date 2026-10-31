@@ -1,4 +1,4 @@
 #profile-title: 🔥 cvedcVPN sub 🔥
 #profile-update-interval: 5
 #announce: парсер работает ⚡
-vless://66217279-de40-4b62-b2bb-9c33b8fb7a01@ivx-ivy-al0.whitenetwork.cloud:7445?type=tcp&security=reality&sni=passport.yandex.ru&fp=random&flow=xtls-rprx-vision&pbk=S_s3FVodJIep88KnIgT0cZLUMB2tAJHTJEn0o-J03G8&sid=283f4b51fbe39ad9#🇷🇺 Россия | SNI passport.yandex.ru | 🔥 cvedcVPN sub
+vless://e436321f-24a9-4c38-b935-7d7dee0c3f68@ss.ll0ll.vip:2096?type=grpc&security=reality&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&sni=id.vk.com&serviceName=vless-grpc-reality&fp=firefox#🇩🇪 Германия | SNI id.vk.com | 🔥 cvedcVPN sub
