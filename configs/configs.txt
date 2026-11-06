@@ -1,4 +1,3 @@
 #profile-title: 🔥 cvedcVPN sub 🔥
 #profile-update-interval: 5
 #announce: парсер работает ⚡
-vless://92b79c22-f68b-4713-8b21-52f264cb92f5@downloadchache1.song69.fun:28150?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=metrika.yandex.ru&pbk=HRmmr0Ii4Tr9jPLwratvLhee3_VWFNK47T8AAo7kzww&sid=dcb858da&fp=firefox#🇳🇱 Нидерланды | SNI metrika.yandex.ru | 🔥 cvedcVPN sub
