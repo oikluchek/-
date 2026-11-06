@@ -1,3 +1,7 @@
 #profile-title: 🔥 cvedcVPN sub 🔥
 #profile-update-interval: 5
 #announce: парсер работает ⚡
+vless://c5f09ac5-d980-408d-a7fa-00cdb4d8ead4@re-rus4.koska.pro:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=ozon.ru&pbk=0YT84_xcDsLgiP0Bmwk7YoXKQslmEIHkmJNU20g4yB4&sid=1b8baf052c4e771a&path=%2F&mode=stream-up&extra=%7B%22xPaddingBytes%22%3A+%22100-2000%22%7D&fp=firefox#🇫🇮 Финляндия | SNI ozon.ru | 🔥 cvedcVPN sub
+vless://c5f09ac5-d980-408d-a7fa-00cdb4d8ead4@re-rus4.koska.pro:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=ozon.ru&pbk=0YT84_xcDsLgiP0Bmwk7YoXKQslmEIHkmJNU20g4yB4&sid=1b8baf052c4e771a&path=%2F&mode=stream-up&extra=%7B%22xPaddingBytes%22%3A+%22100-2000%22%7D&fp=qq#🇫🇮 Финляндия | SNI ozon.ru | 🔥 cvedcVPN sub
+vless://c5f09ac5-d980-408d-a7fa-00cdb4d8ead4@re-rus4.koska.pro:443?type=xhttp&headerType=none&security=reality&encryption=none&sni=ozon.ru&fp=firefox&pbk=0YT84_xcDsLgiP0Bmwk7YoXKQslmEIHkmJNU20g4yB4&sid=1b8baf052c4e771a&path=%2F&mode=stream-up&extra=%7B%22xPaddingBytes%22%3A%20%22100-2000%22%7D#🇷🇺 Россия | SNI ozon.ru | 🔥 cvedcVPN sub
+vless://92b79c22-f68b-4713-8b21-52f264cb92f5@downloadchache1.song69.fun:28150?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=metrika.yandex.ru&pbk=HRmmr0Ii4Tr9jPLwratvLhee3_VWFNK47T8AAo7kzww&sid=dcb858da&fp=firefox#🇳🇱 Нидерланды | SNI metrika.yandex.ru | 🔥 cvedcVPN sub
