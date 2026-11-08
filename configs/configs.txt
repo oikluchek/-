@@ -1,4 +1,7 @@
 #profile-title: 🔥 cvedcVPN sub 🔥
 #profile-update-interval: 5
 #announce: парсер работает ⚡
-vless://cd138479-c87a-4d4c-b6ea-4beeb6ef2b47@rapira-dof.whitenw.net:8445?encryption=none&flow=xtls-rprx-vision&headerType=&pbk=l06r0clkHjHk7HRGpkDBJwZ1JJscSqfwHUQOrV3v3hQ&security=reality&sni=passport.yandex.ru&spx=%2F&type=tcp&fp=chrome#🇷🇺 Россия | SNI passport.yandex.ru | 🔥 cvedcVPN sub
+vless://0894db40-59c1-41b7-baa5-173c16f5c70d@fd54sfsdfsd.whitenw.net:9443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=passport.yandex.ru&pbk=vZ22ThhkpXUd5-tY-v5TTrouLHjgYYmeQgqeLt7HRz0&fp=firefox#🇪🇺 Anycast | SNI passport.yandex.ru | 🔥 cvedcVPN sub
+vless://0894db40-59c1-41b7-baa5-173c16f5c70d@2dsafsd.whitenw.net:9444?encryption=none&type=tcp&security=reality&sni=passport.yandex.ru&pbk=kFbLiztysJGEnqzWRH1JLbPzDUZyaI1eglpD4ORSOyA&sid=309975573a744b32&fp=firefox#🇪🇺 Anycast | SNI passport.yandex.ru | 🔥 cvedcVPN sub
+vless://0894db40-59c1-41b7-baa5-173c16f5c70d@cdn321.whitenw.net:10443?encryption=none&type=tcp&security=reality&sni=passport.yandex.ru&pbk=kFbLiztysJGEnqzWRH1JLbPzDUZyaI1eglpD4ORSOyA&sid=309975573a744b32&fp=firefox#🇪🇺 Anycast | SNI passport.yandex.ru | 🔥 cvedcVPN sub
+vless://0894db40-59c1-41b7-baa5-173c16f5c70d@cdn323.whitenw.net:10443?encryption=none&type=tcp&security=reality&sni=passport.yandex.ru&pbk=kFbLiztysJGEnqzWRH1JLbPzDUZyaI1eglpD4ORSOyA&sid=309975573a744b32&fp=firefox#🇪🇺 Anycast | SNI passport.yandex.ru | 🔥 cvedcVPN sub
