@@ -1,3 +1,5 @@
 #profile-title: 🔥 cvedcVPN sub 🔥
 #profile-update-interval: 5
 #announce: парсер работает ⚡
+vless://84a56b88-2f89-4a57-b925-74abd5b7fd87@dwedfs.whitenw.net:8445?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=passport.yandex.ru&pbk=I_0JD13_bJuD6bNhTfb1PFPJUQqEVHl-YFluNwHAPD4&fp=chrome&spx=/#🇷🇺 Россия | SNI passport.yandex.ru | 🔥 cvedcVPN sub
+vless://84a56b88-2f89-4a57-b925-74abd5b7fd87@ae2.api-metrics-sync.xyz:11113?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=passport.yandex.ru&pbk=I_0JD13_bJuD6bNhTfb1PFPJUQqEVHl-YFluNwHAPD4&fp=chrome&spx=/#🇪🇺 Anycast | SNI passport.yandex.ru | 🔥 cvedcVPN sub
