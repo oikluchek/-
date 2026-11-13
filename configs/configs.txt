@@ -1,6 +1,4 @@
 #profile-title: 🔥 cvedcVPN sub 🔥
 #profile-update-interval: 5
 #announce: парсер работает ⚡
-vless://90157e25-cee1-4217-921e-91f300bc1a24@fdat.titun.su:443?security=reality&encryption=none&pbk=1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=pulse.mail.ru&sid=428ef87fd47a3a32&fp=firefox#🇦🇹 Австрия | SNI pulse.mail.ru | 🔥 cvedcVPN sub
-vless://90157e25-cee1-4217-921e-91f300bc1a24@fdat.titun.su:443?security=reality&encryption=none&pbk=1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=pulse.mail.ru&sid=428ef87fd47a3a32&fp=qq#🇦🇹 Австрия | SNI pulse.mail.ru | 🔥 cvedcVPN sub
 vless://90157e25-cee1-4217-921e-91f300bc1a24@novonl.subv.ru:443?security=reality&encryption=none&pbk=1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=golos.mail.ru&sid=428ef87fd47a3a32#🇳🇱 Нидерланды | SNI golos.mail.ru | 🔥 cvedcVPN sub
