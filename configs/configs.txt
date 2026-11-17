@@ -1,5 +1,3 @@
 #profile-title: 🔥 cvedcVPN sub 🔥
 #profile-update-interval: 5
 #announce: парсер работает ⚡
-vless://02ac275e-7604-4f62-b8cf-5045a8227ec9@ns.uu.1omg1.click:443?security=reality&sni=id.vk.com&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&type=grpc&mode=gun&serviceName=vless-grpc-reality&encryption=none&fp=firefox#🇩🇪 Германия | SNI id.vk.com | 🔥 cvedcVPN sub
-vless://02ac275e-7604-4f62-b8cf-5045a8227ec9@ns.uu.1omg1.click:443?security=reality&sni=id.vk.com&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&type=grpc&mode=gun&serviceName=vless-grpc-reality&encryption=none&fp=safari#🇩🇪 Германия | SNI id.vk.com | 🔥 cvedcVPN sub
