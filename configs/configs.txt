@@ -1,3 +1,4 @@
 #profile-title: 🔥 cvedcVPN sub 🔥
 #profile-update-interval: 5
 #announce: парсер работает ⚡
+vless://b432a23a-acff-425c-bf69-70480cd6ed09@dfsto.whitenw.net:8443?security=reality&encryption=none&pbk=pNj1rPSs9XjNpf30e8DjGbNBU1fp58CzFrxP36_D42U&headerType=none&fp=firefox&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=passport.yandex.ru&sid=b470934eb6924098#🇬🇧 Великобритания | SNI passport.yandex.ru | 🔥 cvedcVPN sub
