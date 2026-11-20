@@ -1,5 +1,3 @@
 #profile-title: 🔥 cvedcVPN sub 🔥
 #profile-update-interval: 5
 #announce: парсер работает ⚡
-vless://fd90e601-a56c-42b8-aab7-aa02d26fcb04@t03jfnfode.deshevayashaurma.icu:443?encryption=none&flow=xtls-rprx-vision&pbk=8wsCMM2zufCIE32RR7_Df1512OC2M6qGmahqDofzCDc&security=reality&sid=73e0da0b&sni=preview.rutube.ru&spx=%2F&type=tcp&fp=firefox#🇳🇱 Нидерланды | SNI preview.rutube.ru | 🔥 cvedcVPN sub
-vless://f59f02e8-9d66-48e8-afc2-2ce7972d51bd@restful-haggot.xrent.cloud:10666?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=passport.yandex.ru&fp=firefox&pbk=FRAR39JkMtmSLC1fsZxLehEittKBpdTlZqj0cf3k4Rc&sid=d94d3f6d21961589#🇪🇺 Anycast | SNI passport.yandex.ru | 🔥 cvedcVPN sub
